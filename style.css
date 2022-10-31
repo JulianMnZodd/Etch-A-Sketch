@@ -1,0 +1,19 @@
+.tablero{
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    grid-template-columns: repeat(16,1fr);
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
