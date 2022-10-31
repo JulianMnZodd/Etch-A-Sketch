@@ -9,21 +9,27 @@
     <title>Pizarra</title>
 </head>
 <body>
+    <div class="title"><h1>SketchPad</h1></div>
     <main class="flex-container">
-        <div class="title"><h1>SketchPad</h1></div>
+        <section class="nav">
+            <article class="buttons">
+                <button onclick="setColor('red')">Red</button>
+                <button onclick="setColor('black')">Negro</button>
+                <button onclick="setColor('random')">Random</button>
+                <button onclick="limpiarTablero()">Reset</button>
+                <input type="color" name="" id="" value="black" onchange="setColor(this.value)">
+            </article>
+            <section>
+                <input class="size" type="text" placeholder="Tamaño del tablero"/>
+                <button class="size-btn" >Set SIZE</button>
+            </section>
+        </section>
+        
         <section class="content">
             <article class="tablero"></article>
-            <article class="buttons">
-                <button>Blanco </button>
-                <button>Negro</button>
-                <button>Random</button>
-                <button>Reset</button>
-            </article>
+            
         </section>
-        <section>
-            <input type="text" placeholder="Tamaño del tablero" value="16">
-            <button>Set SIZE</button>
-        </section>
+
     </main>
     <script src="/main.js"></script>
 </body>

@@ -1,19 +1,36 @@
+.title{
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+}
+
 .tablero{
     width: 500px;
     height: 500px;
     display: grid;
     grid-template-columns: repeat(16,1fr);
     grid-template-columns: repeat(16,1fr);
+    border: solid 1px;
 }
 
 .flex-container{
     display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    
+}
+
+.nav{
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 50px;
 }
 
 .buttons{
+    margin-top: 15px;
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
