@@ -1,7 +1,13 @@
+body{
+    background-color: #eee;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .title{
     text-align: center;
     font-size: 30px;
     padding: 15px;
+    font-weight: bold;
+    margin-bottom: 40px;
 }
 
 .tablero{
@@ -19,7 +25,6 @@
     align-items: center;
     
 }
-
 .nav{
     display: flex;
     justify-content: center;
@@ -33,4 +38,49 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+
 }
+
+#white ,#black,#random,#reset,.size-btn{
+    padding: 10px;
+    width: 100px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    box-shadow: .5rem .5rem 1rem black;
+}
+.size{
+    width: 100px;
+    height: 38px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+#white{
+    background-color: white;
+}
+#black{
+    background-color: black;
+    color: white;
+}
+#random{
+    background:linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+    color: white;
+}
+#reset{
+    background-color: darkgray;
+}
+#color{
+    width: 100px;
+    height: 40px;
+}
+
+.aviso{
+    font-size: 20px;
+    color: cornflowerblue;
+}
+

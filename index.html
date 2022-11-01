@@ -13,16 +13,17 @@
     <main class="flex-container">
         <section class="nav">
             <article class="buttons">
-                <button onclick="setColor('red')">Red</button>
-                <button onclick="setColor('black')">Negro</button>
-                <button onclick="setColor('random')">Random</button>
-                <button onclick="limpiarTablero()">Reset</button>
-                <input type="color" name="" id="" value="black" onchange="setColor(this.value)">
+                <button id="white" onclick="setColor('white')">Blanco</button>
+                <button id="black" onclick="setColor('black')">Negro</button>
+                <button id="random" onclick="setColor('random')">Arcoiris</button>
+                <button id="reset" onclick="limpiarTablero()">Reiniciar</button>
+                <input id="color" type="color" name="" id="" value="black" onchange="setColor(this.value)">
             </article>
             <section>
-                <input class="size" type="text" placeholder="Tamaño del tablero"/>
-                <button class="size-btn" >Set SIZE</button>
+                <input class="size" type="text" placeholder="tamaño"/>
+                <button class="size-btn" >Cambiar</button>
             </section>
+            <p class="aviso">Click en el tablero para comenzar a pintar y para parar!!</p>
         </section>
         
         <section class="content">

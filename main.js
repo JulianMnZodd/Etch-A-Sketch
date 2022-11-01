@@ -1,4 +1,4 @@
-
+let click = true
 document.addEventListener('DOMContentLoaded',function(){
     crearTablero(16);
 
@@ -38,6 +38,10 @@ function getSize(){
     }
 }
 
+$tablero.addEventListener('click',()=>{
+    click = !click
+})
+
 /******BOTONES */
 
 function limpiarTablero(){
@@ -52,15 +56,16 @@ function setColor(colorElegido){
 }
 
 function colorDiv(){
-    if(color == 'random'){
-        this.style.backgroundColor = `hsl(${Math.random()*360},100%,50%)`
+    if(click){
+        if(color == 'random'){
+            this.style.backgroundColor = `hsl(${Math.random()*360},100%,50%)`
+        }
+        else if(color== 'white'){
+            this.style.backgroundColor = 'white'
+        }
+        else{
+            this.style.backgroundColor = color
+        }
     }
-    else if(color== 'red'){
-        this.style.backgroundColor = 'red'
-    }
-    else{
-        this.style.backgroundColor = color
-    }
-
 }
 
