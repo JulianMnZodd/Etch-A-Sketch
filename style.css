@@ -1,11 +1,14 @@
 body{
     background-color: #eee;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Permanent Marker', cursive;
+}
+.tablero{
+    background-color: white;
 }
 .title{
     text-align: center;
-    font-size: 30px;
-    padding: 15px;
+    font-size: 50px;
+    padding: 5px;
     font-weight: bold;
     margin-bottom: 40px;
 }
